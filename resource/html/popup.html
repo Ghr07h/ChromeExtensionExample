@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="../css/index.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/md5.js"></script>
+        <script type="text/javascript" src="../js/sha1.js"></script>
+        <script type="text/javascript" src="../js/sha256.js"></script>
+    </head>
+    <body>
+        <textarea rows="10" cols="50" placeholder="待处理文本" id="codetext"></textarea>
+        <div>
+            <select id="codeselect" >
+                <option value="0">Base64 Decode</option>
+                <option value="1">Base64 Decode(中文UTF8+Url编码处理)</option>
+                <option value="2">Base64 Encode(中文UTF8+Url编码处理)</option>
+                <option value="3">Base64 Decode(中文Unicode字符集处理)</option>
+                <option value="4">Base64 Encode(中文Unicode字符集处理)</option>
+                <option value="5">Url Decode</option>
+                <option value="6">Url Encode</option>
+                <option value="7">Url Encode(额外编码Url分隔符)</option>
+                <option value="8">Escape Decode</option>
+                <option value="9">Escape Encode</option>
+                <option value="10">MD5</option>
+                <option value="11">SHA1</option>
+                <option value="12">SHA256</option>
+                <option value="13">Json 格式化</option>
+                <option value="14">哈希碰撞 CMD5</option>
+            </select>
+            <input type="button" value="处 理"  id="codebutton">
+        </div>
+        <iframe src="https://www.cmd5.com/"  width="100%" height="180" ></iframe>
+        <script type="text/javascript" src="../js/popup.js"></script>
+    </body>
+</html>
